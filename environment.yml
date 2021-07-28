@@ -1,0 +1,34 @@
+name: sqlalchemy-core-example
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python>=3.6
+  - pip
+  # BASICS
+  - numpy
+  - scipy
+  - pandas
+  - tqdm
+  - click
+  - ipython
+  - matplotlib
+  - seaborn
+  - sqlalchemy
+  - google-cloud-bigquery-storage
+  - google-cloud-bigquery
+  - pyarrow
+  - pip:
+     - -e .  # install git checkout of sqlalchemy-core-example in editable mode
+     - pybigquery  # right now there is no PyPI package :-(
+
+  # DEVELOPMENT ONLY PACKAGES (could also be kept in a separate environment file)
+  - jupyterlab
+  - pytest
+  - pytest-cov
+  - tox
+  - pre_commit
+  - nbdime
+  - nbstripout
+  - sphinx
+  - recommonmark
