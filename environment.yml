@@ -1,4 +1,4 @@
-name: sqlalchemy-core-example
+name: bigquery-sqla
 channels:
   - defaults
   - conda-forge
